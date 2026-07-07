@@ -1,0 +1,18 @@
+{
+  "name": "mini-code-graph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 3 章示例：最小代码图谱 vs 向量召回，对照「谁调用了某函数」",
+  "scripts": {
+    "start": "tsx src/compare.ts"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}

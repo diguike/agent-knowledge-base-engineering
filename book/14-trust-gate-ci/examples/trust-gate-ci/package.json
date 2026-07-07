@@ -1,0 +1,10 @@
+{
+  "name": "trust-gate-ci",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 14 章示例：trust gate 策略检查器（被动知识 vs 会跑代码组件 + 白名单）",
+  "scripts": { "start": "tsx src/main.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

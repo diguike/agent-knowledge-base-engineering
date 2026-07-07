@@ -1,0 +1,14 @@
+{
+  "// 说明": "agent 同时挂两类端点：自建服务管私有业务知识，GitMCP 管公开代码衍生知识",
+  "mcpServers": {
+    "aishop-knowledge": {
+      "// ": "上一章手搭的自建知识服务（私有业务知识）",
+      "command": "npx",
+      "args": ["tsx", "../../../10-knowledge-mcp/examples/knowledge-mcp/src/stdio.ts"]
+    },
+    "some-lib-docs": {
+      "// ": "代码衍生知识：直接声明依赖 GitMCP 端点，不自建",
+      "url": "https://gitmcp.io/owner/some-lib"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "scenario-matrix",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 4 章示例：合并 SME 访谈与 query 日志，构建业务场景 × 任务场景覆盖矩阵",
+  "scripts": { "start": "tsx src/build.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

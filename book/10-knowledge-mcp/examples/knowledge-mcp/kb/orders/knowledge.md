@@ -1,0 +1,2 @@
+- 订单状态机：created 到 paid 到 shipped 到 delivered，paid 后可退款。
+- 改订单 status 一律走 advanceOrder，禁止直接赋值。

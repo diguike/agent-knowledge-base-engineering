@@ -1,0 +1,5 @@
+name: "@kb/reconcile"
+version: "1.0.0"
+owner: "对账组"
+deps:
+  - "@kb/orders"

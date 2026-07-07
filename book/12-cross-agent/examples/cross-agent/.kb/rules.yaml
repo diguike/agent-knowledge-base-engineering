@@ -1,0 +1,11 @@
+# 单一知识源：所有 agent 格式都从这里生成。改规则只改这里。
+rules:
+  - id: money-unit
+    scope: global
+    text: 本仓库金额单位是分，展示时再转元。
+  - id: order-status
+    scope: order
+    text: 改订单 status 必须走 advanceOrder，禁止直接赋值。
+  - id: refund-review
+    scope: refund
+    text: 退款金额超过 5000 元需人工审核。

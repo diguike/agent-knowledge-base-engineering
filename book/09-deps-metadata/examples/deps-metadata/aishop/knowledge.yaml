@@ -1,0 +1,11 @@
+# aishop 仓库根的 knowledge.yaml
+extends: "@kb/base@^2.0.0"
+dependencies:
+  "@kb/orders": "^3.1.0"
+  "@kb/inventory": "~1.4.0"
+  "@kb/refund": "^2.0.0"
+  "@kb/legacy-shipping": "^1.0.0"
+knowledge_domains:
+  - payment/*
+  - risk/blocklist
+local: ".kb/local/"

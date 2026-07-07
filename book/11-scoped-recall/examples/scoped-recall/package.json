@@ -1,0 +1,10 @@
+{
+  "name": "scoped-recall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 11 章示例：召回的双重过滤（namespace + 角色权限），权限下推到检索层",
+  "scripts": { "start": "tsx src/demo.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

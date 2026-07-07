@@ -1,0 +1,6 @@
+# 订单知识包元数据：像 npm 包一样有名字、版本、owner、依赖
+name: "@kb/orders"
+version: "3.1.0"
+owner: "订单组"
+deps:
+  - "@kb/inventory" # 下单要先锁库存，依赖库存包

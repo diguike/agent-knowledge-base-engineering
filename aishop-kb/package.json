@@ -1,0 +1,33 @@
+{
+  "name": "aishop-kb",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "《Agent 知识库工程实战》的最终成品：一座可运行、可自托管的 aishop 知识库 + 统一 CLI",
+  "bin": {
+    "aishop-kb": "src/cli.ts"
+  },
+  "scripts": {
+    "coverage": "tsx src/cli.ts coverage",
+    "serve": "tsx src/cli.ts serve",
+    "serve:smoke": "tsx src/cli.ts serve --smoke",
+    "promote": "tsx src/cli.ts promote",
+    "check": "tsx src/cli.ts check",
+    "extract": "tsx src/cli.ts extract",
+    "eval": "tsx src/cli.ts eval",
+    "drift": "tsx src/cli.ts drift",
+    "health": "tsx src/cli.ts health"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

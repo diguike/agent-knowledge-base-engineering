@@ -1,0 +1,10 @@
+{
+  "name": "coverage-tool",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 5 章示例：语义覆盖度工具（同空间嵌入 + K-means + 逐簇覆盖 + 盲区候选题）",
+  "scripts": { "start": "tsx src/coverage.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

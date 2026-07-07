@@ -1,0 +1,10 @@
+{
+  "name": "cross-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 12 章示例：一份知识源生成 Claude/Cursor/Copilot/Codex 四种格式 + 一致性检查",
+  "scripts": { "start": "tsx src/main.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

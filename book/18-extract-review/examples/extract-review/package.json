@@ -1,0 +1,10 @@
+{
+  "name": "extract-review",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 18 章示例：抽取候选 + 近重复/语义冲突检测 + 人审队列",
+  "scripts": { "start": "tsx src/main.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

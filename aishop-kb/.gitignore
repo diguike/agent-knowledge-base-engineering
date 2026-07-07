@@ -1,0 +1,8 @@
+node_modules/
+*.log
+
+# promote 命令的产物（读者本地跑 `aishop-kb promote` 生成，不入库）
+kb/L1/*/refund-review-threshold.md
+kb/L1/*/promo-capacity.md
+kb/L1/*/legacy-channel.md
+kb/L1/*/no-auto-refund-blocklist.md

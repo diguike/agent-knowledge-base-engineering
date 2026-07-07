@@ -1,0 +1,17 @@
+# aishop-kb
+
+> aishop（虚构电商后端）的 Agent 知识库。按 L0/L1/L2 分层组织，L1 为可复用知识包，
+> 每个包有五字段 frontmatter 和 knowledge.yaml 依赖清单。这是《Agent 知识库工程实战》的最终成品。
+
+## 组织级基础层（L0）
+- [组织级基础约定](kb/L0/base.md)：提交规范、安全红线、金额单位、代码风格。
+
+## 领域知识包（L1）
+- [订单与下单规则 @kb/orders](kb/L1/kb-orders/knowledge.md)：下单锁库存、状态机、advanceOrder、legacy_channel。
+- [库存与大促规则 @kb/inventory](kb/L1/kb-inventory/knowledge.md)：分布式锁、大促扩容 3 倍。
+- [退款审核规则 @kb/refund](kb/L1/kb-refund/knowledge.md)：退款超 5000 人工审核、先校验风控。
+- [风控名单规则 @kb/risk](kb/L1/kb-risk/knowledge.md)：命中名单不许自动退款、下单二次验证。
+- [对账规则 @kb/reconcile](kb/L1/kb-reconcile/knowledge.md)：每日对账、差异排查、legacy_channel。
+
+## 本地层（L2）
+- [AGENTS.md](AGENTS.md)：本仓库的依赖声明与本地约定。

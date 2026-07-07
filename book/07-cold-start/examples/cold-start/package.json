@@ -1,0 +1,10 @@
+{
+  "name": "cold-start",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 7 章示例：存量资料冷启动分诊（迁移/接入/丢弃）",
+  "scripts": { "start": "tsx src/triage.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

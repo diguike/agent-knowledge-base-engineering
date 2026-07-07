@@ -1,0 +1,15 @@
+# aishop
+
+> 虚构电商后端。coding agent 请先读本文件建立全局认识，再按路径确定性取知识。
+
+## 知识文档
+
+- [订单](docs/orders.md): 订单状态机与流转约定
+- [库存](docs/inventory.md): 下单锁库存、分布式锁、大促扩容
+- [退款](docs/refund.md): 退款前置条件、金额审核（超 5000 需人工）、自动退款与风控校验
+- [风控](docs/risk.md): 风控名单同步与二次验证
+- [对账](docs/reconcile.md): 对账任务与差异排查
+
+## 代码入口
+
+- 订单状态机定义: src/order/orderStatus.ts

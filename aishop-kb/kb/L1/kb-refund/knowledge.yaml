@@ -1,0 +1,6 @@
+name: "@kb/refund"
+version: "2.0.0"
+owner: "财务老王"
+deps:
+  - "@kb/risk"   # 退款要先过风控名单
+  - "@kb/orders" # 退款依赖订单状态机

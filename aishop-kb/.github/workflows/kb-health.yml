@@ -1,0 +1,31 @@
+name: kb-health
+
+# 知识库健康度门禁：coverage + eval + drift 三道，任一红则失败。
+# 对应书中「把知识库当软件工程」——健康度三项进 CI（第 14、21、22 章）。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  kb-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+
+      - name: 覆盖度门禁（第 5 章）
+        run: npx tsx src/cli.ts coverage
+
+      - name: 质量门禁（第 17 章）
+        run: npx tsx src/cli.ts check
+
+      - name: 有效性门禁（第 21 章）
+        run: npx tsx src/cli.ts eval
+
+      - name: 漂移门禁（第 22 章）
+        run: npx tsx src/cli.ts drift

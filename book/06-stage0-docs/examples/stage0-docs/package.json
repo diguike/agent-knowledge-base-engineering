@@ -1,0 +1,10 @@
+{
+  "name": "stage0-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 6 章示例：aishop 阶段0 知识库（docs + llms.txt + 确定性导航）",
+  "scripts": { "start": "tsx src/navigate.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

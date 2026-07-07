@@ -1,0 +1,7 @@
+# 每块知识的审核归属——改哪块由哪块的主人把关。
+# 关键包（涉及资金/安全边界）升级为 ≥2 名 owner；一般业务包 1 名即可。
+# 注：CODEOWNERS 只声明归属；要真正强制两人都过审，需在分支保护里把 required approving reviews 设为 2。
+kb/kb-refund/     @finance-team @finance-lead
+kb/kb-orders/     @order-team
+kb/kb-inventory/  @inventory-team
+kb/kb-risk/       @risk-team @security-lead

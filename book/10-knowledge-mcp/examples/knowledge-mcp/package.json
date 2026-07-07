@@ -1,0 +1,14 @@
+{
+  "name": "knowledge-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 10 章示例：手搭知识 MCP 服务（namespace 过滤 + 混合检索 + rerank），InMemoryTransport 端到端 smoke",
+  "scripts": { "start": "tsx src/smoke.ts" },
+  "engines": { "node": ">=20.11" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

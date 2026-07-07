@@ -1,0 +1,10 @@
+{
+  "name": "consume-context",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 19 章示例：上下文预算下的知识组装（全塞 vs 常驻L0+按需检索）",
+  "scripts": { "start": "tsx src/main.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

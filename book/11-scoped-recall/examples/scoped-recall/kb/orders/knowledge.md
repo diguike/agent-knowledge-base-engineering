@@ -1,0 +1,1 @@
+- (roles: support,finance) 订单 paid 后才能发起退款。

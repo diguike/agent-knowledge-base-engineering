@@ -1,0 +1,3 @@
+- (roles: finance) 退款金额超过 5000 元需人工审核。
+- (roles: finance,risk) 命中风控名单的订单不允许自动退款。
+- (roles: finance) 大额退款的内部对账口径与到账处理。

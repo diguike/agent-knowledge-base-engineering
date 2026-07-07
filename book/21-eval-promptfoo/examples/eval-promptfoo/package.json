@@ -1,0 +1,10 @@
+{
+  "name": "eval-promptfoo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "第 21 章示例：断言式有效性评测 + pass^k 任务级可靠性",
+  "scripts": { "start": "tsx src/main.ts" },
+  "engines": { "node": ">=20.11" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}
