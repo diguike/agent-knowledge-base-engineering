@@ -41,7 +41,7 @@ aishop-kb/
 
 每个 L1 知识包含两个文件：`knowledge.md`（五字段 frontmatter：title/type/owner/last_reviewed/status，type 走 Diátaxis）+ `knowledge.yaml`（name/version/owner/deps，像 npm 包一样声明依赖）。
 
-## 七条命令
+## 八条命令
 
 | 命令 | 干什么 | 怎么跑 |
 |---|---|---|
@@ -51,6 +51,7 @@ aishop-kb/
 | `check` | 知识质量门禁：结构/元数据、Diátaxis 单型、prose lint（AI 味道）、死链，四层客观检查 | `npx tsx src/cli.ts check` |
 | `extract` | 从事故复盘/PR 抽取候选知识，对已入库知识做近重复 + 语义冲突检测，产出人审队列 | `npx tsx src/cli.ts extract` |
 | `eval` | 有效性度量：断言式评测（必答点/禁答点）+ pass^k 任务级可靠性 | `npx tsx src/cli.ts eval` |
+| `ablate` | 消融实验：逐包摘除测 uplift、翻转归因，量出每份知识的边际贡献 | `npx tsx src/cli.ts ablate` |
 | `drift` / `health` | 漂移检测（时间/废弃/一致性）；health 汇总覆盖度+有效性+新鲜度三位一体看板 | `npx tsx src/cli.ts drift` / `health` |
 
 `serve` 默认走 stdio，可直接挂进任意 MCP 客户端（Claude / Cursor / Codex …）。客户端配置示例：
@@ -73,7 +74,8 @@ aishop-kb/
 | `check` | 第 17 章　docs-as-code 共建：CODEOWNERS 与质量门禁 | `17-docs-as-code/examples/docs-as-code` |
 | `extract` | 第 18 章　知识的自动抽取：候选提炼、冲突检测与人工审核 | `18-extract-review/examples/extract-review` |
 | `eval` | 第 21 章　有效性度量：promptfoo 与任务级可靠性 | `21-eval-promptfoo/examples/eval-promptfoo` |
-| `drift` / `health` | 第 22 章　治理与生命周期：漂移检测与健康度看板 | `22-governance-roadmap/examples/governance-ci` |
+| `ablate` | 第 22 章　消融实验：边际贡献的度量与归因 | `22-ablation/examples/ablation-harness` |
+| `drift` / `health` | 第 23 章　治理与生命周期：漂移检测与健康度看板 | `23-governance-roadmap/examples/governance-ci` |
 
 知识内容的分层组织与依赖声明来自第 8 章（`08-layered-org`）和第 9 章（`09-deps-metadata`）。
 

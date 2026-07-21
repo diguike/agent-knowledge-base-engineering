@@ -1,7 +1,7 @@
 ---
 title: 第 17 章　docs-as-code 共建：CODEOWNERS 与质量门禁
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/CLbGwoPvQi00aMkrwhBcRhAAniE"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
 到上一章为止，`aishop-kb` 的 CLI 已经有三条命令：`coverage` 扫覆盖度、`serve` 起知识服务、`promote` 把工程师的随手记上收成 L1 候选。
@@ -13,7 +13,7 @@ last_synced: "2026-07-07T21:00:00+08:00"
 ## 17.1 本章你会得到什么
 
 1. `aishop-kb` 的一份 `.github/CODEOWNERS`：把四个知识包的审核归属钉死到领域组，关键包挂两名 owner。
-2. `aishop-kb check` 命令：四层客观门禁（frontmatter 结构、Diátaxis 单型、Vale 文风、死链），在 CI 上不过关就拦。
+2. `aishop-kb check` 命令：四层客观门禁（frontmatter 结构、[Diátaxis](https://diataxis.fr) 单型、Vale 文风、死链），在 CI 上不过关就拦。
 3. 一条把谁审、机器筛什么拆干净的设计原则——机器筛客观问题，人只审机器筛不掉的判断。
 
 ## 17.2 一条被门禁挡下的知识 PR

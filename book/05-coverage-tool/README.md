@@ -1,7 +1,7 @@
 ---
 title: 第 5 章　覆盖度的量化：语义测试覆盖率及其实现
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/NoM9w42weibaDoktFVhcCwHXn4d"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
 上一章给 `aishop-kb` 留下一份 `scenario-matrix.json`：6 个业务场景 × 3 个任务场景共 18 格，其中 3 格挂着 golden，覆盖率 3/18。这份 JSON 是 `aishop-kb` 的考纲，回答的是"我想考的都考到了吗"。
@@ -183,7 +183,7 @@ flowchart TB
 
 ## 下一章
 
-`aishop-kb` 的工具链有了第一条命令 `coverage`，能丈量、能揪盲区——但它到现在还没有一行真正的知识文件。第 6 章正式动工：给 `aishop-kb` 建起第一个 `docs/` 文件夹，配上 `llms.txt` 自描述，让 agent 靠确定性导航就能取用，这是能力阶梯的第一级。
+`aishop-kb` 的工具链有了第一条命令 `coverage`，能丈量、能揪盲区——但它到现在还没有一行真正的知识文件。第 6 章正式动工：给 `aishop-kb` 建起第一个 `docs/` 文件夹，配上 [`llms.txt`](https://llmstxt.org) 自描述，让 agent 靠确定性导航就能取用，这是能力阶梯的第一级。
 
 ## 配套代码
 

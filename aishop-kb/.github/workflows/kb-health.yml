@@ -27,5 +27,5 @@ jobs:
       - name: 有效性门禁（第 21 章）
         run: npx tsx src/cli.ts eval
 
-      - name: 漂移门禁（第 22 章）
+      - name: 漂移门禁（第 23 章）
         run: npx tsx src/cli.ts drift

@@ -1,12 +1,12 @@
 ---
 title: 第 14 章　分发的信任边界：trust gate 与 CI 集成
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/HRbGw5WTBipMluk4BtQcQFsOn42"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
-第 13 章把 `aishop-kb` 打成了 plugin，用 marketplace 汇总，在 `.claude/settings.json` 里用 `extraKnownMarketplaces` + `enabledPlugins` 声明。克隆仓库、信任工作区，Claude Code 就提示把声明的知识包一次装好。
+第 13 章把 `aishop-kb` 打成了 plugin，用 marketplace 汇总，在 `.claude/settings.json` 里用 `extraKnownMarketplaces` + `enabledPlugins` 声明。克隆仓库、信任工作区，[Claude Code](https://claude.com/claude-code) 就提示把声明的知识包一次装好。
 
-但声明式装进来的东西不只是 Markdown。plugin 可以携带 hooks、MCP 服务、LSP 配置，这三类都会在你机器上执行代码。克隆即装的便利，此刻也是一条让外部代码自动落地的通道。
+但声明式装进来的东西不只是 Markdown。plugin 可以携带 hooks、[MCP](https://modelcontextprotocol.io) 服务、LSP 配置，这三类都会在你机器上执行代码。克隆即装的便利，此刻也是一条让外部代码自动落地的通道。
 
 本章给 `aishop-kb` 的分发加上信任边界——trust gate，界定哪些能自动装、装好的东西什么时候准跑，再把这条边界接进 CI。
 

@@ -1,7 +1,7 @@
 ---
 title: 第 19 章　消费端工程：检索时机与上下文注入
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/EV61w1DgliH6lDkmImWcAseAnAp"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
 走到这一章，`aishop-kb` 已经是一座供给侧相当完备的知识库了。它现在的样子：
@@ -108,7 +108,7 @@ flowchart TB
 | 方式 | 进入机制 | 对应知识形态 | 主要代价 |
 |---|---|---|---|
 | 常驻 system prompt | 每次请求固定加载，始终在上下文最前 | L0/L2 少而稳的约定 | 占固定额度，多了拖累每次调用 |
-| 按需 tool call | agent 判断需要时调 MCP 的 `search_docs` 现取 | L1 领域包、大规模知识服务 | 一次往返延迟；agent 没意识到就漏取 |
+| 按需 tool call | agent 判断需要时调 [MCP](https://modelcontextprotocol.io) 的 `search_docs` 现取 | L1 领域包、大规模知识服务 | 一次往返延迟；agent 没意识到就漏取 |
 | 检索后拼接（RAG） | 检索一批语义相关片段拼进 prompt 再作答 | 跨源、模糊、开放式问答 | 拼太多稀释注意力、污染上下文 |
 
 这张表不是三个平行选项让人随便挑，它是能力阶梯在消费侧的镜像。供给侧建库时选了哪一层，消费侧就基本锁定走哪条注入路径：

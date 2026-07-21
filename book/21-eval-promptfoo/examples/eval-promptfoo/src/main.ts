@@ -29,4 +29,4 @@ for (const t of tasks) {
   console.log(`${t.name}：${line}`);
 }
 console.log('\n退款任务 pass^1=0.80 看着还行，但 pass^3 只有 0.40——「平均分漂亮」和「稳定可靠」是两回事。');
-console.log('覆盖度（第5章）+ 有效性（本章）一起进 CI，加第22章漂移检测，构成健康度看板。');
+console.log('覆盖度（第5章）+ 有效性（本章）一起进 CI，加第23章漂移检测，构成健康度看板。');

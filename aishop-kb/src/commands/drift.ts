@@ -1,4 +1,4 @@
-// aishop-kb drift / health —— 治理 CI（第 22 章）。
+// aishop-kb drift / health —— 治理 CI（第 23 章）。
 // drift：漂移检测（时间漂移 + 废弃仍在库 + 一致性漂移）。
 // health：三位一体健康度看板（覆盖度 + 有效性 + 新鲜度），任一不达标判红。
 
@@ -38,7 +38,7 @@ export function detectDrift(): DriftIssue[] {
 }
 
 export function runDrift(): number {
-  console.log('漂移检测（时间漂移 · 废弃仍在库 · 一致性漂移）（第 22 章）');
+  console.log('漂移检测（时间漂移 · 废弃仍在库 · 一致性漂移）（第 23 章）');
   console.log('='.repeat(56));
   const drift = detectDrift();
   if (drift.length === 0) {
@@ -52,7 +52,7 @@ export function runDrift(): number {
 
 // health：三位一体看板。实跑覆盖度和有效性两条子管线取真实结果，再叠加漂移条数。
 export function runHealth(): number {
-  console.log('健康度看板（覆盖度 + 有效性 + 新鲜度）（第 22 章）');
+  console.log('健康度看板（覆盖度 + 有效性 + 新鲜度）（第 23 章）');
   console.log('='.repeat(56));
   console.log('（下方三项分别实跑 coverage / eval / drift 子管线取真实结果，输出从略，只汇总判定）\n');
 

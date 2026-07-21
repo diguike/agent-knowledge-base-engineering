@@ -1,7 +1,7 @@
 ---
 title: 前言
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/YtklwWaHXip4OGkiC2VcSbBQnvc"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
 ## 一座建歪了的知识库
@@ -40,7 +40,7 @@ agent 回答"订单状态机怎么流转"时，把三个文件里各半截的代
 
 全书围绕一个虚构的电商后端 `aishop` 展开——它有订单、库存、支付、退款、风控、对账几个模块，既有代码衍生的知识，也有只在人脑里的业务规则。你要给它建的那座知识库，我们叫它 `aishop-kb`。
 
-它从一个空目录起步，沿一条能力阶梯一级级长大：一个 Markdown 文件夹 → 分层知识包 → MCP 知识服务 → 多包声明式分发。读到第 22 章，你手里会有一座完整、可自托管、能自检的 aishop-kb，以及一套随书逐章长出来的 CLI：coverage 扫覆盖度、serve 起知识 MCP 服务、promote 把本地随手记上收成共享包、check 做质量门禁、extract 从事故复盘抽候选、eval 跑评测、drift 检测漂移。
+它从一个空目录起步，沿一条能力阶梯一级级长大：一个 Markdown 文件夹 → 分层知识包 → [MCP](https://modelcontextprotocol.io) 知识服务 → 多包声明式分发。读到第 23 章，你手里会有一座完整、可自托管、能自检的 aishop-kb，以及一套随书逐章长出来的 CLI：coverage 扫覆盖度、serve 起知识 MCP 服务、promote 把本地随手记上收成共享包、check 做质量门禁、extract 从事故复盘抽候选、eval 跑评测、ablate 量出每份知识的边际贡献、drift 检测漂移。
 
 就像《自己动手写 AI Agent》带你亲手写出 Ling、评测那本书带你建出 EvalKit，这本书带你从一个空目录建出 aishop-kb。每一章的代码都在这个仓库上继续生长，你跟着敲，最后手里是一个真东西，不是一堆截图。
 

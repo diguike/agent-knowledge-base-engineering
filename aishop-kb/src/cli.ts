@@ -10,8 +10,9 @@ const COMMANDS: Record<string, string> = {
   check: '知识质量门禁：结构/Diátaxis/文风/死链（第 17 章）',
   extract: '从事故复盘/PR 抽取候选知识 + 冲突/近重复检测（第 18 章）',
   eval: '有效性度量：断言式评测 + pass^k 任务级可靠性（第 21 章）',
-  drift: '漂移检测：时间漂移/废弃/一致性（第 22 章）',
-  health: '三位一体健康度看板：覆盖度 + 有效性 + 新鲜度（第 22 章）',
+  ablate: '消融实验：逐包摘除测 uplift，归因每份知识的边际贡献（第 22 章）',
+  drift: '漂移检测：时间漂移/废弃/一致性（第 23 章）',
+  health: '三位一体健康度看板：覆盖度 + 有效性 + 新鲜度（第 23 章）',
 };
 
 function usage(): void {
@@ -49,6 +50,9 @@ async function main(): Promise<void> {
       break;
     case 'eval':
       code = (await import('./commands/eval')).run();
+      break;
+    case 'ablate':
+      code = (await import('./commands/ablate')).run();
       break;
     case 'drift':
       code = (await import('./commands/drift')).runDrift();

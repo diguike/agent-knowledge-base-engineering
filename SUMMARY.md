@@ -1,7 +1,7 @@
 # 目录
 
 > 《Agent 知识库工程实战：组织、分发、共建与度量》
-> 全书 22 章 / 6 部 + 附录。示例以单一 demo 仓库 `aishop`（虚构电商后端）贯穿、逐章长大。
+> 全书 23 章 / 6 部 + 附录。示例以单一 demo 仓库 `aishop`（虚构电商后端）贯穿、逐章长大。
 
 **第一部分　基础：检索机制、知识来源与载体形态**
 
@@ -41,7 +41,8 @@
 - [第 19 章　消费端工程：检索时机与上下文注入](book/19-consume-context/README.md)
 - [第 20 章　知识库安全：权限隔离、投毒防护与审计](book/20-security/README.md)
 - [第 21 章　有效性度量：评测指标、promptfoo 与任务级可靠性](book/21-eval-promptfoo/README.md)
-- [第 22 章　治理与生命周期：漂移检测、废弃机制与落地路线图](book/22-governance-roadmap/README.md)
+- [第 22 章　消融实验：知识库边际贡献的度量与归因](book/22-ablation/README.md)
+- [第 23 章　治理与生命周期：漂移检测、废弃机制与落地路线图](book/23-governance-roadmap/README.md)
 
 **附录**
 

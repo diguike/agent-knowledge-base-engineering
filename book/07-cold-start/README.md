@@ -1,10 +1,10 @@
 ---
 title: 第 7 章　存量知识的冷启动：接入与迁移的分诊
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/RTMAwUiMziH5Gck1C8fcEqytn8t"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
-上一章给 `aishop-kb` 建起了阶段0 的三件套：`docs/` 下五篇手写文档、一份自描述的 `llms.txt` 索引、一份放本地约定的 `AGENTS.md`。这一版干净、可导航、零基础设施。
+上一章给 `aishop-kb` 建起了阶段0 的三件套：`docs/` 下五篇手写文档、一份自描述的 [`llms.txt`](https://llmstxt.org) 索引、一份放本地约定的 `AGENTS.md`。这一版干净、可导航、零基础设施。
 
 但它只装了新写的知识。真实团队接手一个系统时，值钱的知识早已散落在别处——一个塞了三年的 Confluence、一个半荒废的 Notion、几十篇散在 Google Docs 里的设计文档。`aishop-kb` 现在对这些存量视而不见。
 
@@ -13,7 +13,7 @@ last_synced: "2026-07-07T21:00:00+08:00"
 ## 7.1 本章你会得到什么
 
 1. 一套分诊判据：把每份存量知识判为接入、迁移或丢弃，并说清三条路在治理归属上的本质差异。
-2. 一张 Notion / Outline / Confluence 三种主流 wiki 的 MCP 接入取舍表。
+2. 一张 Notion / [Outline](https://www.getoutline.com) / Confluence 三种主流 wiki 的 [MCP](https://modelcontextprotocol.io) 接入取舍表。
 3. `examples/cold-start/` 里一个可运行的分诊脚本：对 10 份存量文档自动分档，把该迁移的写进 `aishop-kb` 的 `docs/`。
 
 ## 7.2 冷启动面对的是存量而非空目录

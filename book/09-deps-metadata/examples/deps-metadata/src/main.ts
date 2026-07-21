@@ -39,6 +39,6 @@ console.log('\n' + '='.repeat(56));
 const errors = allIssues.filter((i) => i.level === 'error').length;
 const warns = allIssues.filter((i) => i.level === 'warn').length;
 console.log(`校验完成：${errors} 个错误、${warns} 个告警。`);
-console.log('这几类问题（缺 owner、新鲜度超期、废弃仍被依赖）正是第 22 章治理要系统解决的，这里先让它们可被机器检出。');
+console.log('这几类问题（缺 owner、新鲜度超期、废弃仍被依赖）正是第 23 章治理要系统解决的，这里先让它们可被机器检出。');
 // 进 CI：有 error 时非零退出
 if (errors > 0) process.exitCode = 1;

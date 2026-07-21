@@ -1,10 +1,10 @@
 ---
 title: 第 20 章　知识库安全：权限隔离、投毒防护与审计
 feishu_url: "https://fivwvysqdz.feishu.cn/wiki/G5uKwbxZzihUzSkfISlc9yQenYf"
-last_synced: "2026-07-07T21:00:00+08:00"
+last_synced: "2026-07-21T17:24:59+08:00"
 ---
 
-到这一章，`aishop-kb` 已经不是一个人维护的文档目录了。它对外提供 `search_docs` 的 MCP 端点（第 10、11 章），被 aishop 的客服、下单、风控多个 agent 同时消费；它接了自动抽取流水线（第 18 章），从 PR 讨论和事故复盘里持续吸纳新知识；它走 CODEOWNERS 的 PR 共建（第 17 章），全团队都能往里提内容。
+到这一章，`aishop-kb` 已经不是一个人维护的文档目录了。它对外提供 `search_docs` 的 [MCP](https://modelcontextprotocol.io) 端点（第 10、11 章），被 aishop 的客服、下单、风控多个 agent 同时消费；它接了自动抽取流水线（第 18 章），从 PR 讨论和事故复盘里持续吸纳新知识；它走 CODEOWNERS 的 PR 共建（第 17 章），全团队都能往里提内容。
 
 开放和自动化带来了知识密度，也带来了一个前几章没正面处理的问题：`aishop-kb` 自己成了一个攻击面。任何能往库里塞内容的人，都在潜在地影响所有消费它的 agent；任何一次跨角色的越权召回，都可能把不该出去的知识放出去；一次查不到责任人的知识篡改，事后无从追责。
 
@@ -201,7 +201,7 @@ flowchart LR
 
 ## 下一章
 
-`aishop-kb` 现在既有用、又开放、还安全，但有一个问题始终没被正面回答：它到底有没有让 agent 答得更准？第 21 章把有效性变成一组可运行的数字——给 CLI 加 `eval` 命令，用 promptfoo 跑检索层与生成层指标，让每次知识变更都能自动回归。
+`aishop-kb` 现在既有用、又开放、还安全，但有一个问题始终没被正面回答：它到底有没有让 agent 答得更准？第 21 章把有效性变成一组可运行的数字——给 CLI 加 `eval` 命令，用 [promptfoo](https://www.promptfoo.dev) 跑检索层与生成层指标，让每次知识变更都能自动回归。
 
 ## 配套代码
 
